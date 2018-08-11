@@ -1,0 +1,6 @@
+server:
+    port: 8081
+
+remote-url:
+    base: http://localhost:8080
+    quote: /quote

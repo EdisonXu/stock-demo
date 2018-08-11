@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd" >
+<mapper namespace="com.ex.demo.sa.mapper.StockSnapshotMapper">
+
+    <insert id="insertOrUpdate" parameterType="com.ex.demo.sa.domain.StockSnapshot">
+        INSERT INTO stock_snapshot VALUES (#{userId}, #{stockId}, #{stockName}, #{cost}, #{quantity}, #{profitAndLoss}, #{lastUpdateTime})
+        ON DUPLICATE KEY
+        UPDATE
+        cost=VALUES(cost), quantity=VALUES(quantity), profitAndLoss=VALUES(profitAndLoss), lastUpdateTime=VALUES(lastUpdateTime)
+    </insert>
+    <update id="batchUpdateProfitAndLoss" parameterType="java.util.List">
+        <foreach collection="list" item="item" index="index" separator=";">
+            UPDATE stock_snapshot SET profitAndLoss=#{item.profitAndLoss}, lastUpdateTime=#{lastUpdateTime}
+            WHERE userId=#{item.userId} AND stockId=#{item.stockId}
+        </foreach>
+    </update>
+    <update id="updateProfitAndLoss" parameterType="com.ex.demo.sa.domain.StockSnapshot">
+        UPDATE stock_snapshot SET profitAndLoss=#{profitAndLoss}, lastUpdateTime=#{lastUpdateTime} WHERE userId=#{userId} AND stockId=#{stockId}
+    </update>
+    <select id="findByUserIdAndStockId" resultType="com.ex.demo.sa.domain.StockSnapshot">
+        select userId, stockId, stockName, cost, quantity, profitAndLoss, lastUpdateTime
+        from stock_snapshot
+        where userId=#{userId} and stockId=#{stockId}
+    </select>
+    <select id="findByStockId" resultType="com.ex.demo.sa.domain.StockSnapshot">
+        select userId, stockId, stockName, cost, quantity, profitAndLoss, lastUpdateTime
+        from stock_snapshot
+        where stockId=#{stockId}
+    </select>
+</mapper>

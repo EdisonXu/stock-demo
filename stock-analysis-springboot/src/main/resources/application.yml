@@ -1,0 +1,49 @@
+spring:
+    devtools:
+        restart:
+            enabled: true
+            exclude: static/**,public/**
+        livereload:
+            enabled: true # we use gulp + BrowserSync for livereload
+    jackson:
+        serialization.indent_output: true
+        serialization.write_dates_as_timestamps: false
+    h2:
+        console:
+            enabled: true
+            path: /h2
+            settings:
+                web-allow-others: true
+    datasource:
+        initialization-mode: always
+        schema: classpath:schema.sql
+        #data: classpath:data.sql
+        type: com.zaxxer.hikari.HikariDataSource
+        #url: jdbc:mysql://111.231.18.164:33309/test?rewriteBatchedStatements=true&useUnicode=true&characterEncoding=utf8&useSSL=false
+        #username: edi
+        #password: Mko0-pl,
+        url: jdbc:h2:file:./test;MODE=MYSQL;
+        username: sa
+        password:
+        driver-class-name: org.h2.Driver
+        hikari:
+            maximumPoolSize: 5
+            data-source-properties:
+            cachePrepStmts: true
+            prepStmtCacheSize: 250
+            prepStmtCacheSqlLimit: 2048
+            useServerPrepStmts: true
+
+mybatis:
+    #config-location: classpath:mybatis-config.xml
+    configuration:
+        map-underscore-to-camel-case: true
+        default-fetch-size: 100
+server:
+    port: 8080
+
+logging:
+    level:
+        root: INFO
+        com.ex.demo.sa.mapper: DEBUG
+application:

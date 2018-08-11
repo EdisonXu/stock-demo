@@ -1,0 +1,186 @@
+2018-08-09 17:50:06 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS ""DAILY_QUOTE"" ( ""STOCKID"" VARCHAR(50) NOT NULL, ""PREVCLOSEPRICE"" DECIMAL(10,4) DEFAULT NULL, ""OPENPRICE"" DOUBLE(10,[*]4) DEFAULT NULL, ""HIGHPRICE"" DOUBLE(10,4) DEFAULT NULL, ""LOWPRICE"" DOUBLE(10,4) DEFAULT NULL, ""CLOSEPRICE"" DOUBLE(10,4) DEFAULT NULL, ""TRADINGDAY"" DATE NOT NULL, PRIMARY KEY (""STOCKID"",""TRADINGDAY"") ) ENGINE=INNODB DEFAULT CHARSET=UTF8 "; expected ")"; SQL statement:
+CREATE TABLE IF NOT EXISTS `daily_quote` ( `stockId` varchar(50) NOT NULL, `prevClosePrice` decimal(10,4) DEFAULT NULL, `openPrice` double(10,4) DEFAULT NULL, `highPrice` double(10,4) DEFAULT NULL, `lowPrice` double(10,4) DEFAULT NULL, `closePrice` double(10,4) DEFAULT NULL, `tradingDay` date NOT NULL, PRIMARY KEY (`stockId`,`tradingDay`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8 [42001-197]
+2018-08-09 17:54:26 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ""DAILY_QUOTE"" ( ""STOCKID"" VARCHAR(50) NOT NULL, ""PREVCLOSEPRICE"" DECIMAL(10,4) DEFAULT NULL, ""OPENPRICE"" DOUBLE(10,[*]4) DEFAULT NULL, ""HIGHPRICE"" DOUBLE(10,4) DEFAULT NULL, ""LOWPRICE"" DOUBLE(10,4) DEFAULT NULL, ""CLOSEPRICE"" DOUBLE(10,4) DEFAULT NULL, ""TRADINGDAY"" DATE NOT NULL, PRIMARY KEY (""STOCKID"",""TRADINGDAY"") ) ENGINE=INNODB DEFAULT CHARSET=UTF8 "; expected ")"; SQL statement:
+CREATE TABLE `daily_quote` ( `stockId` varchar(50) NOT NULL, `prevClosePrice` decimal(10,4) DEFAULT NULL, `openPrice` double(10,4) DEFAULT NULL, `highPrice` double(10,4) DEFAULT NULL, `lowPrice` double(10,4) DEFAULT NULL, `closePrice` double(10,4) DEFAULT NULL, `tradingDay` date NOT NULL, PRIMARY KEY (`stockId`,`tradingDay`) ) ENGINE=InnoDB DEFAULT CHARSET=utf8 [42001-197]
+2018-08-09 17:55:08 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ""DAILY_QUOTE"" (
+  ""STOCKID"" VARCHAR(50) NOT NULL,
+  ""PREVCLOSEPRICE"" DECIMAL(10,4) DEFAULT NULL,
+  ""OPENPRICE"" DOUBLE(10,[*]4) DEFAULT NULL,
+  ""HIGHPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""LOWPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""CLOSEPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""TRADINGDAY"" DATE NOT NULL,
+  PRIMARY KEY (""STOCKID"",""TRADINGDAY"")
+) ENGINE=INNODB DEFAULT CHARSET=UTF8 "; expected ")"; SQL statement:
+CREATE TABLE `daily_quote` (
+  `stockId` varchar(50) NOT NULL,
+  `prevClosePrice` decimal(10,4) DEFAULT NULL,
+  `openPrice` double(10,4) DEFAULT NULL,
+  `highPrice` double(10,4) DEFAULT NULL,
+  `lowPrice` double(10,4) DEFAULT NULL,
+  `closePrice` double(10,4) DEFAULT NULL,
+  `tradingDay` date NOT NULL,
+  PRIMARY KEY (`stockId`,`tradingDay`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 [42001-197]
+2018-08-09 17:55:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ""DAILY_QUOTE"" (
+  ""STOCKID"" VARCHAR(50) NOT NULL,
+  ""PREVCLOSEPRICE"" DECIMAL(10,4) DEFAULT NULL,
+  ""OPENPRICE"" DOUBLE(10,[*]4) DEFAULT NULL,
+  ""HIGHPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""LOWPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""CLOSEPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""TRADINGDAY"" DATE NOT NULL,
+  PRIMARY KEY (""STOCKID"",""TRADINGDAY"")
+) "; expected ")"; SQL statement:
+CREATE TABLE `daily_quote` (
+  `stockId` varchar(50) NOT NULL,
+  `prevClosePrice` decimal(10,4) DEFAULT NULL,
+  `openPrice` double(10,4) DEFAULT NULL,
+  `highPrice` double(10,4) DEFAULT NULL,
+  `lowPrice` double(10,4) DEFAULT NULL,
+  `closePrice` double(10,4) DEFAULT NULL,
+  `tradingDay` date NOT NULL,
+  PRIMARY KEY (`stockId`,`tradingDay`)
+) [42001-197]
+2018-08-09 17:55:50 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ""DAILY_QUOTE"" (
+  ""STOCKID"" VARCHAR(50) NOT NULL,
+  ""PREVCLOSEPRICE"" DECIMAL(10,4) DEFAULT NULL,
+  ""OPENPRICE"" DOUBLE(10,[*]4) DEFAULT NULL,
+  ""HIGHPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""LOWPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""CLOSEPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""TRADINGDAY"" DATE NOT NULL
+) ENGINE=INNODB DEFAULT CHARSET=UTF8 "; expected ")"; SQL statement:
+CREATE TABLE `daily_quote` (
+  `stockId` varchar(50) NOT NULL,
+  `prevClosePrice` decimal(10,4) DEFAULT NULL,
+  `openPrice` double(10,4) DEFAULT NULL,
+  `highPrice` double(10,4) DEFAULT NULL,
+  `lowPrice` double(10,4) DEFAULT NULL,
+  `closePrice` double(10,4) DEFAULT NULL,
+  `tradingDay` date NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8 [42001-197]
+2018-08-09 17:56:36 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ""DAILY_QUOTE"" (
+  ""STOCKID"" VARCHAR(50) NOT NULL,
+  ""PREVCLOSEPRICE"" DECIMAL(10,4) DEFAULT NULL,
+  ""OPENPRICE"" DOUBLE(10,[*]4) DEFAULT NULL,
+  ""HIGHPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""LOWPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""CLOSEPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""TRADINGDAY"" DATE NOT NULL,
+  PRIMARY KEY (""STOCKID"",""TRADINGDAY"")
+)DEFAULT CHARSET=UTF8 "; expected ")"; SQL statement:
+CREATE TABLE `daily_quote` (
+  `stockId` varchar(50) NOT NULL,
+  `prevClosePrice` decimal(10,4) DEFAULT NULL,
+  `openPrice` double(10,4) DEFAULT NULL,
+  `highPrice` double(10,4) DEFAULT NULL,
+  `lowPrice` double(10,4) DEFAULT NULL,
+  `closePrice` double(10,4) DEFAULT NULL,
+  `tradingDay` date NOT NULL,
+  PRIMARY KEY (`stockId`,`tradingDay`)
+)DEFAULT CHARSET=utf8 [42001-197]
+2018-08-09 18:11:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE ""DAILY_QUOTE"" (
+  ""STOCKID"" VARCHAR(50) NOT NULL,
+  ""PREVCLOSEPRICE"" DECIMAL(10,4) DEFAULT NULL,
+  ""OPENPRICE"" DOUBLE(10,[*]4) DEFAULT NULL,
+  ""HIGHPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""LOWPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""CLOSEPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""TRADINGDAY"" DATE NOT NULL,
+  PRIMARY KEY (""STOCKID"",""TRADINGDAY"")
+)DEFAULT CHARSET=UTF8 "; expected ")"; SQL statement:
+CREATE TABLE `daily_quote` (
+  `stockId` varchar(50) NOT NULL,
+  `prevClosePrice` decimal(10,4) DEFAULT NULL,
+  `openPrice` double(10,4) DEFAULT NULL,
+  `highPrice` double(10,4) DEFAULT NULL,
+  `lowPrice` double(10,4) DEFAULT NULL,
+  `closePrice` double(10,4) DEFAULT NULL,
+  `tradingDay` date NOT NULL,
+  PRIMARY KEY (`stockId`,`tradingDay`)
+)DEFAULT CHARSET=utf8 [42001-197]
+2018-08-09 18:11:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS  ""DAILY_QUOTE"" (
+  ""STOCKID"" VARCHAR(50) NOT NULL,
+  ""PREVCLOSEPRICE"" DECIMAL(10,4) DEFAULT NULL,
+  ""OPENPRICE"" DOUBLE(10,[*]4) DEFAULT NULL,
+  ""HIGHPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""LOWPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""CLOSEPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""TRADINGDAY"" DATE NOT NULL,
+  PRIMARY KEY (""STOCKID"",""TRADINGDAY"")
+) DEFAULT CHARSET=UTF8 "; expected ")"; SQL statement:
+CREATE TABLE IF NOT EXISTS  `daily_quote` (
+  `stockId` varchar(50) NOT NULL,
+  `prevClosePrice` decimal(10,4) DEFAULT NULL,
+  `openPrice` double(10,4) DEFAULT NULL,
+  `highPrice` double(10,4) DEFAULT NULL,
+  `lowPrice` double(10,4) DEFAULT NULL,
+  `closePrice` double(10,4) DEFAULT NULL,
+  `tradingDay` date NOT NULL,
+  PRIMARY KEY (`stockId`,`tradingDay`)
+) DEFAULT CHARSET=utf8 [42001-197]
+2018-08-09 18:11:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS  ""DAILY_QUOTE"" (
+  ""STOCKID"" VARCHAR(50) NOT NULL,
+  ""PREVCLOSEPRICE"" DECIMAL(10,4) DEFAULT NULL,
+  ""OPENPRICE"" DOUBLE(10,[*]4) DEFAULT NULL,
+  ""HIGHPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""LOWPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""CLOSEPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""TRADINGDAY"" DATE NOT NULL,
+  PRIMARY KEY (""STOCKID"",""TRADINGDAY"")
+) DEFAULT CHARSET=UTF8 "; expected ")"; SQL statement:
+CREATE TABLE IF NOT EXISTS  `daily_quote` (
+  `stockId` varchar(50) NOT NULL,
+  `prevClosePrice` decimal(10,4) DEFAULT NULL,
+  `openPrice` double(10,4) DEFAULT NULL,
+  `highPrice` double(10,4) DEFAULT NULL,
+  `lowPrice` double(10,4) DEFAULT NULL,
+  `closePrice` double(10,4) DEFAULT NULL,
+  `tradingDay` date NOT NULL,
+  PRIMARY KEY (`stockId`,`tradingDay`)
+) DEFAULT CHARSET=utf8 [42001-197]
+2018-08-09 18:12:15 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Syntax error in SQL statement "CREATE TABLE IF NOT EXISTS  ""DAILY_QUOTE"" (
+  ""STOCKID"" VARCHAR(50) NOT NULL,
+  ""PREVCLOSEPRICE"" DECIMAL(10,4) DEFAULT NULL,
+  ""OPENPRICE"" DOUBLE(10,[*]4) DEFAULT NULL,
+  ""HIGHPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""LOWPRICE"" DOUBLE(10,4) DEFAULT NULL,
+  ""CLOSEPRICE"" DOUBLE(10,4) DEFAULT NULL
+) DEFAULT CHARSET=UTF8 "; expected ")"; SQL statement:
+CREATE TABLE IF NOT EXISTS  `daily_quote` (
+  `stockId` varchar(50) NOT NULL,
+  `prevClosePrice` decimal(10,4) DEFAULT NULL,
+  `openPrice` double(10,4) DEFAULT NULL,
+  `highPrice` double(10,4) DEFAULT NULL,
+  `lowPrice` double(10,4) DEFAULT NULL,
+  `closePrice` double(10,4) DEFAULT NULL
+) DEFAULT CHARSET=utf8 [42001-197]
+2018-08-09 18:15:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "QUOTE" not found; SQL statement:
+insert into quote values(?, ?, ?) [42102-197]
+2018-08-09 18:15:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "QUOTE" not found; SQL statement:
+insert into quote values(?, ?, ?) [42102-197]
+2018-08-09 18:15:47 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "QUOTE" not found; SQL statement:
+insert into quote values(?, ?, ?) [42102-197]
+2018-08-09 18:15:49 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "QUOTE" not found; SQL statement:
+insert into quote values(?, ?, ?) [42102-197]
+2018-08-09 18:15:51 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "QUOTE" not found; SQL statement:
+insert into quote values(?, ?, ?) [42102-197]
+2018-08-09 18:15:53 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLException: Table "QUOTE" not found; SQL statement:
+insert into quote values(?, ?, ?) [42102-197]
